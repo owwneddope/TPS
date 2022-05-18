@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b5a9b8616344ba33393e9c9844850256 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b5a9b8616344ba33393e9c9844850256" ></div>
+        
+</body>
+<script>    
+    
+            var map_b5a9b8616344ba33393e9c9844850256 = L.map(
+                "map_b5a9b8616344ba33393e9c9844850256",
+                {
+                    center: [56.44932, 36.567118],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6cac299bbf09dbd86720417eada8f056 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b5a9b8616344ba33393e9c9844850256);
+        
+    
+            var marker_f06c7a640c77d1b8b5a35ff10f5f6fc8 = L.marker(
+                [66.075128, 33.059431],
+                {}
+            ).addTo(map_b5a9b8616344ba33393e9c9844850256);
+        
+    
+        var popup_7a30d80c6ca13216c55b07f009c54931 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47991747fd8401b557e24cadc2d5d43a = $(`<div id="html_47991747fd8401b557e24cadc2d5d43a" style="width: 100.0%; height: 100.0%;">Лоухи</div>`)[0];
+            popup_7a30d80c6ca13216c55b07f009c54931.setContent(html_47991747fd8401b557e24cadc2d5d43a);
+        
+
+        marker_f06c7a640c77d1b8b5a35ff10f5f6fc8.bindPopup(popup_7a30d80c6ca13216c55b07f009c54931)
+        ;
+
+        
+    
+    
+            marker_f06c7a640c77d1b8b5a35ff10f5f6fc8.bindTooltip(
+                `<div>
+                     Начальная станция
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_622d946d4023a35f839da57c209974a1 = L.marker(
+                [67.159666, 32.419974],
+                {}
+            ).addTo(map_b5a9b8616344ba33393e9c9844850256);
+        
+    
+        var popup_8d86232434100d2a51ab6b4f25e0dd87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a81357179a512d1f499b69ce7a3a960 = $(`<div id="html_4a81357179a512d1f499b69ce7a3a960" style="width: 100.0%; height: 100.0%;">Кандалакша</div>`)[0];
+            popup_8d86232434100d2a51ab6b4f25e0dd87.setContent(html_4a81357179a512d1f499b69ce7a3a960);
+        
+
+        marker_622d946d4023a35f839da57c209974a1.bindPopup(popup_8d86232434100d2a51ab6b4f25e0dd87)
+        ;
+
+        
+    
+    
+            marker_622d946d4023a35f839da57c209974a1.bindTooltip(
+                `<div>
+                     Конечная станция
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cb5210bc0ca8218f9a0207651db5e6a = L.marker(
+                [56.44932, 36.567118],
+                {}
+            ).addTo(map_b5a9b8616344ba33393e9c9844850256);
+        
+    
+        var popup_580f4b670f9aa4850806942c51c7beff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f84451648686e9420af3745acead7efe = $(`<div id="html_f84451648686e9420af3745acead7efe" style="width: 100.0%; height: 100.0%;">Решетниково</div>`)[0];
+            popup_580f4b670f9aa4850806942c51c7beff.setContent(html_f84451648686e9420af3745acead7efe);
+        
+
+        marker_8cb5210bc0ca8218f9a0207651db5e6a.bindPopup(popup_580f4b670f9aa4850806942c51c7beff)
+        ;
+
+        
+    
+    
+            marker_8cb5210bc0ca8218f9a0207651db5e6a.bindTooltip(
+                `<div>
+                     Станция заказчика
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4ddb0e488a224384c7e7bb63eb4e011e = L.polyline(
+                [[66.075128, 33.059431], [67.159666, 32.419974]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b5a9b8616344ba33393e9c9844850256);
+        
+    
+            var poly_line_6838c8fb7579fd6185b02488910ba406 = L.polyline(
+                [[66.075128, 33.059431], [56.44932, 36.567118]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b5a9b8616344ba33393e9c9844850256);
+        
+    
+            var poly_line_19d8deabf6c07fe7d99d7eb88b2165e5 = L.polyline(
+                [[56.44932, 36.567118], [67.159666, 32.419974]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_b5a9b8616344ba33393e9c9844850256);
+        
+    
+            var marker_3222aa197831d5cc43bd57426a61ab87 = L.marker(
+                [56.44932, 36.567118],
+                {}
+            ).addTo(map_b5a9b8616344ba33393e9c9844850256);
+        
+    
+            var div_icon_0297f856c99657163ed96d94133a72fe = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12; color:#252526;\"\u003e\u003cb\u003e   1210.42 KM\u003c/b\u003e\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [50, 50]});
+            marker_3222aa197831d5cc43bd57426a61ab87.setIcon(div_icon_0297f856c99657163ed96d94133a72fe);
+        
+</script>
